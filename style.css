@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+select, input[type="text"], input[type="file"], button {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+}
+
+input[type="file"] {
+  padding: 0;
+}
+
+#fileInput {
+  margin: 20px 0;
+}
+
+#imageContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#imageContainer img {
+  max-width: 200px;
+  margin: 10px;
+}
+
+#analyzeButton {
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#analyzeButton:hover {
+  background-color: #0056b3;
+}
+
+#analysisResult {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #fafafa;
+}
+
+#resultText {
+  white-space: pre-wrap; /* Preserve formatting */
+  word-wrap: break-word; /* Break long words to fit container */
+}

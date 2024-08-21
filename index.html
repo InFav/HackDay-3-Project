@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Analysis App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Image Analysis App</h1>
+
+    <!-- User Persona Selection -->
+    <label for="personaSelect">Who would you like to be writing these LinkedIn series?</label>
+    <select id="personaSelect">
+      <option value="Startup Founder">Startup Founder</option>
+      <option value="Early career Professional">Early career Professional</option>
+      <option value="Mid-level Professional">Mid-level Professional</option>
+      <option value="Senior or Executive">Senior or Executive</option>
+    </select>
+
+    <!-- Purpose Input -->
+    <label for="postPurpose">What is the purpose of the LinkedIn post?</label>
+    <input type="text" id="postPurpose" placeholder="Describe the purpose of the LinkedIn post">
+
+    <!-- Personal Story Input -->
+    <label for="personalStory">What personal stories do you have connected to this interest that makes you passionate about it?</label>
+    <textarea id="personalStory" rows="4" placeholder="Share your personal story here..."></textarea>
+
+    <input type="file" id="fileInput" multiple>
+    <div id="imageContainer"></div>
+    <button id="analyzeButton">Analyze Images</button>
+    <div id="analysisResult">
+      <h2>Analysis Result</h2>
+      <pre id="resultText"></pre>
+    </div>
+    <!-- Regenerate Button -->
+    <button id="regenerateButton" style="display:none;">Regenerate Response</button>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
