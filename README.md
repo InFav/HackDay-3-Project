@@ -11,6 +11,9 @@ First run the server by running node server.js
 Then run npm run dev to run the vite project.
 
 Persona = Job Title; like startup founder etc
+
 JSON.stringify(analyticsJson) = Analytics/Conversation type of the LinkedIn posts that the user has submitted
+
 postPurpose = The purpose of the post that we want gemini to create.
+
 personalStory = What are some things personal that the user want Gemini to use to create the post.
